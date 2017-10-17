@@ -1,0 +1,7 @@
+---
+applications:
+- name: helloworldangular
+  buildpack: staticfile_buildpack
+  path: app
+  memory: 128M
+  instances: 1

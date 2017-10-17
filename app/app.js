@@ -2,9 +2,10 @@
 
 var app = angular.module('demo',['ui.router','ngStorage']);
 
+// TODO: need these in env variables
 app.constant('urls', {
-    BASE: 'http://localhost:8080/',
-    USER_SERVICE_API : 'http://localhost:8080/api/user/'
+    BASE: 'http://helloworldbackend.cfapps.io/', // 'http://localhost:8080/',
+    USER_SERVICE_API : 'http://helloworldbackend.cfapps.io/api/user/' // 'http://localhost:8080/api/user/'
 });
 
 app.config(['$stateProvider', '$urlRouterProvider',
@@ -29,8 +30,8 @@ app.config(['$stateProvider', '$urlRouterProvider',
     }]
 );
 // Declare app level module which depends on views, and components
-app.controller('Hello', function ($scope, $http) {
-    $http.get('http://localhost:8080/greeting').then(function (response) {
+app.controller('Hello', function ($scope, $http, urls) {
+    $http.get(urls.BASE + 'greeting').then(function (response) {
         $scope.greeting = response.data;
         })
     }

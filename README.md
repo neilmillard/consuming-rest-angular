@@ -205,6 +205,20 @@ what is the best way to host the static files to comply with the same origin pol
 Usually this is done by hosting the files by the backend server or through reverse-proxying the
 backend server(s) and web server(s).
 
+The app can be deployed to Cloud Foundry, after the ```cf``` cmd line is installed and logged in.
+
+**manifest**
+```batch
+cf push helloworldangular
+```
+
+**manually** 
+
+```batch
+cf push helloworldangular -p app
+```
+
+visit site at http://helloworldangular.cfapps.io
 
 ## Continuous Integration
 
