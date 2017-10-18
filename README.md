@@ -207,6 +207,12 @@ backend server(s) and web server(s).
 
 The app can be deployed to Cloud Foundry, after the ```cf``` cmd line is installed and logged in.
 
+Ensure the application has been build
+
+```batch
+npm install
+```
+
 **manifest**
 ```batch
 cf push helloworldangular
