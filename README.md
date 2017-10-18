@@ -53,15 +53,11 @@ Now browse to the app at [`localhost:8000/index.html`][local-app-url].
 ```
 app/                    --> all of the source files for the application
   app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
+  partials/             --> app specific view for user form
+    list                  --> user list view for angular
   app.js                --> main application module
+  UserController.js     --> main application controller for the User Model
+  UserService.js        --> User service model that talks to the API
   index.html            --> app layout file (the main html template file of the app)
 karma.conf.js         --> config file for running unit tests with Karma
 e2e-tests/            --> end-to-end tests
