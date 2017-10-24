@@ -13,4 +13,4 @@ inputs:
 
 run:
   path: npm
-  args: ["build"]
+  args: ["install"]
