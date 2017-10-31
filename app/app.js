@@ -4,8 +4,8 @@ var app = angular.module('demo',['ui.router','ngStorage']);
 
 // TODO: need these in env variables
 app.constant('urls', {
-    BASE: 'http://helloworldbackend.cfapps.io/', // 'http://localhost:8080/',
-    USER_SERVICE_API : 'http://helloworldbackend.cfapps.io/api/user/' // 'http://localhost:8080/api/user/'
+    BASE: '//', // 'http://localhost:8080/',
+    USER_SERVICE_API : '//api/user/' // 'http://localhost:8080/api/user/'
 });
 
 app.config(['$stateProvider', '$urlRouterProvider',
